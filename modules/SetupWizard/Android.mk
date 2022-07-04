@@ -16,5 +16,5 @@ endif
 
 LOCAL_PRIVILEGED_MODULE := true
 LOCAL_OVERRIDES_PACKAGES := Provision
-
+LOCAL_OPTIONAL_USES_LIBRARIES := org.apache.http.legacy
 include $(BUILD_GAPPS_PREBUILT_APK)
