@@ -14,7 +14,7 @@ and add the following towards the end:
 <remote name="github" fetch="https://github.com/Kohelet/"  />
 <remote name="opengapps-gitlab" fetch="https://gitlab.opengapps.org/opengapps/"  />
 
-<project path="vendor/opengapps/build" name="kdroid_opengapps_aosp_build" revision="master" remote="github" />
+<project path="vendor/opengapps/build" name="kdroid_opengapps_aosp_build" revision="kdroid" remote="github" />
 
 <project path="vendor/opengapps/sources/all" name="all" clone-depth="1" revision="master" remote="opengapps-gitlab" />
 
