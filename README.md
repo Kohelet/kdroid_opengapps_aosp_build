@@ -1,28 +1,5 @@
 # OpenGApps AOSP based build system
 
-## ++Infrastructure Issues++
-
-**05-Nov-2019**  Gitlab maintenance: we've recreated all of our package repos
-(`all, arm, arm64, x86, x86_64`) from scratch. Please make sure to:
-- install `git-lfs` (more info [here](https://git-lfs.github.com/)) since we're now using it
-- clean and do a fresh pull before building
-
-**25-Feb-2019**  Please see [Ilya Danilkin's blog
-post](https://opengapps.org/blog/post/2019/02/17/github-situation/) on
-the main OpenGapps project page that explains GitHub infrastructure
-issues that affected certain opengapps projects:
-
-https://opengapps.org/blog/post/2019/02/17/github-situation/
-
-In short, the git-remote has changed for the projects `all, arm,
-arm64, x86, x86_64`.  You should update your manifest entries for
-those projects (see the updated example below that uses the remote
-"gitlab").
-
-More discussion on this issue can be found here:
-
-https://github.com/opengapps/opengapps/issues/719
-
 ## Disclaimer
 0. **This project is for testing and research purposes**. Under no circumstances should it be used for a production device.
 1. **Use this at your own risk.** Cyanogenmod received a cease and desist letter from Google when they included Google Apps in their ROM. See: [A Note on Google Apps for Android](http://android-developers.blogspot.com/2009/09/note-on-google-apps-for-android.html)
@@ -222,3 +199,27 @@ curl https://raw.githubusercontent.com/opengapps/aosp_build/master/patches/Lolli
 ```
 
 (Patch only tested on 5.1.1 r37).
+
+## ++Infrastructure Issues++
+
+**05-Nov-2019**  Gitlab maintenance: we've recreated all of our package repos
+(`all, arm, arm64, x86, x86_64`) from scratch. Please make sure to:
+- install `git-lfs` (more info [here](https://git-lfs.github.com/)) since we're now using it
+- clean and do a fresh pull before building
+
+**25-Feb-2019**  Please see [Ilya Danilkin's blog
+post](https://opengapps.org/blog/post/2019/02/17/github-situation/) on
+the main OpenGapps project page that explains GitHub infrastructure
+issues that affected certain opengapps projects:
+
+https://opengapps.org/blog/post/2019/02/17/github-situation/
+
+In short, the git-remote has changed for the projects `all, arm,
+arm64, x86, x86_64`.  You should update your manifest entries for
+those projects (see the updated example below that uses the remote
+"gitlab").
+
+More discussion on this issue can be found here:
+
+https://github.com/opengapps/opengapps/issues/719
+
