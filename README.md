@@ -24,6 +24,7 @@ More discussion on this issue can be found here:
 https://github.com/opengapps/opengapps/issues/719
 
 ## Disclaimer
+0. **This project is for testing and research purposes**. Under no circumstances should it be used for a production device.
 1. **Use this at your own risk.** Cyanogenmod received a cease and desist letter from Google when they included Google Apps in their ROM. See: [A Note on Google Apps for Android](http://android-developers.blogspot.com/2009/09/note-on-google-apps-for-android.html)
 2. **This project is in no way affiliated with, sponsored by, or related to Google.**
 
@@ -33,10 +34,10 @@ https://github.com/opengapps/opengapps/issues/719
 Find your manifest file (check inside `${ANDROID_BUILD_TOP}/.repo/manifests/`)
 and add the following towards the end:
 ```xml
-<remote name="opengapps" fetch="https://github.com/opengapps/"  />
+<remote name="github" fetch="https://github.com/Kohelet/"  />
 <remote name="opengapps-gitlab" fetch="https://gitlab.opengapps.org/opengapps/"  />
 
-<project path="vendor/opengapps/build" name="aosp_build" revision="master" remote="opengapps" />
+<project path="vendor/opengapps/build" name="kdroid_opengapps_aosp_build" revision="master" remote="github" />
 
 <project path="vendor/opengapps/sources/all" name="all" clone-depth="1" revision="master" remote="opengapps-gitlab" />
 
