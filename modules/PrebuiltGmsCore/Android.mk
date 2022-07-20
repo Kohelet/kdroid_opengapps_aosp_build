@@ -13,5 +13,6 @@ LOCAL_OPTIONAL_USES_LIBRARIES += org.apache.http.legacy \
 				 samsung.uwb \
 				 androidx.window.extensions \
 				 androidx.window.sidecar \
-				 com.google.android.wearable
+				 com.google.android.wearable \
+
 include $(BUILD_GAPPS_PREBUILT_APK)
